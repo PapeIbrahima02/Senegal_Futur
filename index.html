@@ -4,6 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>SenegalFutur — Accueil</title>
+
+        <!-- Polices -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <!-- Bootstrap 5 via CDN : feuille de style -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <!--Bootstrap icon  -->
@@ -16,7 +21,7 @@
                 <div class="navbar">
                     <div class="logo">
                         <a href="index.html">
-                            <img src="images/logo_AfriConnect_Summit-removebg-preview.png" alt="Senegal Futur">
+                            <img src="images/logo_Senegal_Futur-removebg-preview.png" alt="Senegal Futur">
                             Sénégal Futur
                         </a>
                     </div>
@@ -41,8 +46,8 @@
             <section class="py-5">
                 <div id="hero-style">
                     <div class="titre">
-                        <span class="badge bg-success">SÉNÉGAL FUTUR — Depuis 2020</span>
-                        <h1>Nous sommes le présent, nous sommes le futur.</h1>
+                        <span class="badge">SÉNÉGAL FUTUR — Depuis 2020</span>
+                        <h1>Nous sommes le présent, <span class="accent">nous sommes le futur.</span></h1>
                         <h2>Former une jeunesse capable de prendre la parole, de développer son leadership et de devenir actrice de son avenir.</h2>
 
                         <div id="btn-hero">
@@ -50,7 +55,7 @@
                             <a href="actions.html">Découvrir nos actions</a>
                         </div>
 
-                        <div>
+                        <div id="stats">
                             <div>
                                 <h3>08+</h3>
                                 <p>Cohortes</p>
@@ -65,31 +70,33 @@
                             </div>
                         </div>
                     </div>
-                    <img src="images/koffi_Mensa.jpg" alt="Accueil">
+                    <img src="images/ibrahima.jpeg" alt="Accueil">
                 </div>
             </section>
 
             
             <!-- Section Notre Mission -->
             <section class="py-5">
-                <div>
-                    <h2>Notre mission</h2>
-                    <p>
-                        Sénégal Futur a pour mission de contribuer à l’épanouissement et au développement de la jeunesse sénégalaise 
-                        en offrant aux jeunes et aux étudiants des opportunités de formation et d’apprentissage.
-                        À travers la prise de parole, l’éloquence, le leadership et le développement personnel, 
-                        nous les accompagnons pour renforcer leur confiance en eux, révéler leur potentiel et devenir 
-                        des acteurs engagés dans la construction de leur avenir et de celui du Sénégal.
-                    </p>
+                <div id="mission">
+                    <div>
+                        <h2>Notre <span class="accent">mission</span></h2>
+                        <p>
+                            Sénégal Futur a pour mission de contribuer à l’épanouissement et au développement de la jeunesse sénégalaise 
+                            en offrant aux jeunes et aux étudiants des opportunités de formation et d’apprentissage.
+                            À travers la prise de parole, l’éloquence, le leadership et le développement personnel, 
+                            nous les accompagnons pour renforcer leur confiance en eux, révéler leur potentiel et devenir 
+                            des acteurs engagés dans la construction de leur avenir et de celui du Sénégal.
+                        </p>
+                    </div>
                     <img src="images/koffi_Mensa.jpg" alt="">
                 </div>
             </section>
 
 
             <!-- Section Pourquoi participer -->
-            <section class="py-5">
-                <h2>Pourquoi participer à notre formation?</h2>
-                <div>
+            <section class="py-5" id="pourquoi">
+                <h2>Pourquoi participer à <span class="accent">notre formation?</span></h2>
+                <div id="container-pourquoi">
                     <div>
                         <i class="bi bi-mic"></i>
                         <h3>Prise de parole</h3>
@@ -110,11 +117,11 @@
 
 
             <!-- Section Nos formations -->
-            <section class="py-5">
-                <h2>Nos formations</h2>
+            <section class="py-5" id="formation">
+                <h2>Nos <span class="accent">formations</span></h2>
                 <p>Développez vos compétences, révélez votre potentiel.</p>
-                <div>
-                    <div>
+                <div id="container-formation">
+                    <div class="formation-child">
                         <img src="images/koffi_Mensa.jpg" alt="">
                         <h3>Formation pour étudiants</h3>
                         <p>
@@ -123,7 +130,7 @@
                         </p>
                         <a href="">En savoir plus</a>
                     </div>
-                    <div>
+                    <div class="formation-child">
                         <img src="images/koffi_Mensa.jpg" alt="">
                         <h3>Formation accélérée pour professionnels</h3>
                         <p>
@@ -137,11 +144,11 @@
 
 
             <!-- Témoignage -->
-            <section class="py-5">
-                <h2>Ils ont vécu l’expérience Sénégal Futur</h2>
+            <section class="py-5" id="Temoignage">
+                <h2>Ils ont vécu <span class="accent">l’expérience</span> Sénégal Futur</h2>
                 <p>Découvrez les expériences des participants qui ont développé leur confiance, leur éloquence et leur leadership grâce à Sénégal Futur.</p>
-                <div>
-                    <div>
+                <div id="container-temoignage">
+                    <div class="Temoignage-child">
                         <p>
                             <i class="bi bi-star-fill text-warning"></i>
                             <i class="bi bi-star-fill text-warning"></i>
@@ -158,7 +165,7 @@
                             <p>Membre de la Cohorte 5</p>
                         </blockquote>
                     </div>
-                    <div>
+                    <div class="Temoignage-child">
                         <p>
                             <i class="bi bi-star-fill text-warning"></i>
                             <i class="bi bi-star-fill text-warning"></i>
@@ -175,7 +182,7 @@
                             <p>Membre de la Cohorte 6</p>
                         </blockquote>
                     </div>
-                    <div>
+                    <div class="Temoignage-child">
                         <p>
                             <i class="bi bi-star-fill text-warning"></i>
                             <i class="bi bi-star-fill text-warning"></i>
@@ -197,12 +204,12 @@
 
 
             <!-- Section CTA -->
-            <section class="py-5">
+            <section class="py-5" id="CTA">
                 <p>
                     Formations, panels, concours d’éloquence, rencontres et initiatives : découvrez 
                     comment Sénégal Futur contribue au développement et à l’épanouissement des jeunes.
                 </p>
-                <a href="actions.html" class="btn">Voir toutes nos actions →</a>
+                <a href="actions.html">Voir toutes nos actions →</a>
             </section>
         </main>
 
@@ -218,6 +225,7 @@
                         Nous accompagnons les jeunes et les étudiants
                         dans le développement de leur potentiel.
                     </p>
+                    <img src="images/logo_Senegal_Futur-removebg-preview.png" alt="Logo Sénégal Futur">
                 </div>
 
                 <div class="footer-column">
