@@ -44,7 +44,7 @@
         <main>
             <!-- Section Hero -->
             <section id="hero-contact">
-                <div id="titre-hero-contact">
+                <div id="titre-hero-contact" class="fade-in">
                     <h1>Une question ? Notre équipe est la pour vous aider</h1>
                     <p>Remplissez le formulaire et nous vous répondrons dans les plus brefs délais.</p>
                     <p>
@@ -57,7 +57,7 @@
             <!-- Section FORMULAIRE -->
             <section id="formulaire">
                 <div id="form-container">
-                    <div id="form">
+                    <div id="form" class="slide-in-left">
                         <form action="" id="inscriptionForm">
                             <div class="div-form">
                                 <label for="nom">Nom & Prenom * :</label>
@@ -65,18 +65,18 @@
                                 <span class="erreur" id="nomPrenomErreur"></span>
                             </div>
                             <div class="div-form">
-                                <label for="mail">Mail :</label>
+                                <label for="mail">Mail * :</label>
                                 <input type="email" id="mail" placeholder="reuissir@gmail.com">
                                 <span class="erreur" id="mailErreur"></span>
                             </div>
                             <div class="div-form">
-                                <label for="telephone">Telephone :</label>
+                                <label for="telephone">Telephone * :</label>
                                 <input type="tel" name="telephone" id="telephone" placeholder="+221 00 000 00 00"> 
                                 <span class="erreur" id="telErreur"></span>
                             </div>
                             <div class="div-form">
-                                <label for="pays">Sujet</label>
-                                <select name="pays" id="pays">
+                                <label for="sujet">Sujet *</label>
+                                <select name="sujet" id="sujet">
                                     <OPtion value="choix">Choisissez un sujet</OPtion>
                                     <option value="">Demande d'information</option>
                                     <option value="">Formation</option>
@@ -84,10 +84,10 @@
                                     <option value="">Participation à une activité</option>
                                     <option value="">Autre</option>
                                 </select>
-                                <span class="erreur" id="paysErreur"></span>
+                                <span class="erreur" id="sujetErreur"></span>
                             </div>
                             <div class="div-form">
-                                <label for="message">Message :</label>
+                                <label for="message">Message * :</label>
                                 <textarea name="message" id="message" rows="6" cols="35"></textarea>
                                 <span class="erreur" id="messageErreur"></span>
                             </div>
@@ -96,7 +96,7 @@
                         <div id="confirmation" class="success"></div>
 
                     </div>
-                    <div id="div-contact">  
+                    <div id="div-contact" class="slide-in-right">  
                         <h2>Contact</h2>
                         <p><i class="bi bi-geo-alt"></i>Dakar, Senegal</p>
                         <p><i class="bi bi-telephone"></i>+221 77 171 19 99</p>
@@ -110,7 +110,7 @@
             <section id="FAQ">
                 <h2>FAQ - Besoin d'une information ?</h2>
 
-                <div class="faq-item">
+                <div class="faq-item fade-in">
                     <input type="checkbox" id="faq1">
                     <label for="faq1">
                         Qui peut participer aux formations de Sénégal Futur ?
@@ -124,7 +124,7 @@
                     </div>
                 </div>
 
-                <div class="faq-item">
+                <div class="faq-item fade-in">
                     <input type="checkbox" id="faq2">
                     <label for="faq2">
                         Combien de temps dure la formation ?
@@ -138,7 +138,7 @@
                     </div>
                 </div>
 
-                <div class="faq-item">
+                <div class="faq-item fade-in">
                     <input type="checkbox" id="faq3">
                     <label for="faq3">
                         Quels sont les domaines abordés pendant la formation ?
@@ -152,7 +152,7 @@
                     </div>
                 </div>
 
-                <div class="faq-item">
+                <div class="faq-item fade-in">
                     <input type="checkbox" id="faq4">
                     <label for="faq4">
                         Organisez-vous des activités en dehors des formations ?
@@ -166,7 +166,7 @@
                     </div>
                 </div>
 
-                <div class="faq-item">
+                <div class="faq-item fade-in">
                     <input type="checkbox" id="faq5">
                     <label for="faq5">
                         Comment rejoindre Sénégal Futur ?
@@ -191,7 +191,7 @@
         <footer>
             <div class="footer-container">
 
-                <div class="footer-column">
+                <div class="footer-column fade-in">
                     <h3>Sénégal Futur</h3>
                     <p>
                         Nous sommes le présent, nous sommes le futur.
@@ -203,7 +203,7 @@
                     <img src="images/logo_Senegal_Futur-removebg-preview.png" alt="Logo Sénégal Futur">
                 </div>
 
-                <div class="footer-column">
+                <div class="footer-column fade-in">
                     <h3>Navigation</h3>
                     <ul>
                         <li><a href="index.html">Accueil</a></li>
@@ -213,7 +213,7 @@
                     </ul>
                 </div>
 
-                <div class="footer-column">
+                <div class="footer-column fade-in">
                     <h3>Contactez-nous</h3>
                     <p><i class="bi bi-geo-alt"></i> Dakar, Sénégal</p>
                     <p><i class="bi bi-telephone"></i> +221 XX XXX XX XX</p>
@@ -228,8 +228,10 @@
 
             </div>
             <hr>
-            <div class="footer-bottom">
-                <p>© 2026 Sénégal Futur. Tous droits réservés.</p>
+            <div class="footer-bottom fade-in">
+                <p>
+                    © <span id="annee"></span> Sénégal Futur. Tous droits réservés
+                </p>
             </div>
 
             <!-- Bouton retour en haut -->

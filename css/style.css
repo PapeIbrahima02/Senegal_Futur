@@ -1207,6 +1207,42 @@ iframe{
 }
 
 
+/* ===== Animations fade-in, slide-in, zoom-in au scroll ===== */
+.fade-in{
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.fade-in.fade-in-active{
+    opacity: 1;
+}
+.slide-in-left{
+    opacity: 0;
+    transform: translatex(-50px);    /*50px a gauche*/
+    transition: all 1s ease;        /*all, toute les propriétés de la section*/
+}
+.slide-in-left.slide-in-left-active{
+    opacity: 1;
+    transform: translatex(0);
+}
+.slide-in-right{
+    opacity: 0;
+    transform: translatex(50px);    /*50px a droite*/
+    transition: all 1s ease;        /*all, toute les propriétés de la section*/
+}
+.slide-in-right.slide-in-right-active{
+    opacity: 1;
+    transform: translatex(0);
+}
+.zoom-in{
+    opacity: 0;
+    transform: scale(0.8);      /*réduit l'élément à 80% de sa taille*/
+    transition: all 1s ease;
+}
+.zoom-in.zoom-in-active{
+    opacity: 1;
+    transform: scale(1);        /*1, taille normale 100%*/
+}
+
 /* ===========================================================
 MEDIA QUERIES — Adaptations selon la taille de l'ecran
 =========================================================== */
